@@ -1,0 +1,172 @@
+pkg_info {
+  arch: "v1model"
+}
+actions {
+  preamble {
+    id: 25892681
+    name: "MyIngress.compute_hashes"
+    alias: "compute_hashes"
+  }
+}
+actions {
+  preamble {
+    id: 25652968
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+counters {
+  preamble {
+    id: 303855022
+    name: "MyIngress.sentC"
+    alias: "sentC"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 8192
+}
+counters {
+  preamble {
+    id: 306666437
+    name: "MyIngress.dropC"
+    alias: "dropC"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 8192
+}
+counters {
+  preamble {
+    id: 304168150
+    name: "MyEgress.recvC"
+    alias: "recvC"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 8192
+}
+registers {
+  preamble {
+    id: 376141972
+    name: "MyIngress.dedup_table_1"
+    alias: "dedup_table_1"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 380632351
+    name: "MyIngress.dedup_table_2"
+    alias: "dedup_table_2"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 384143755
+    name: "MyIngress.dedup_table_3"
+    alias: "dedup_table_3"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 383530360
+    name: "MyIngress.dedup_table_4"
+    alias: "dedup_table_4"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 380211876
+    name: "MyIngress.addr_table_1"
+    alias: "addr_table_1"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 382079711
+    name: "MyIngress.addr_table_2"
+    alias: "addr_table_2"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 369114963
+    name: "MyIngress.addr_table_3"
+    alias: "addr_table_3"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+registers {
+  preamble {
+    id: 371153808
+    name: "MyIngress.addr_table_4"
+    alias: "addr_table_4"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 200
+}
+type_info {
+}
